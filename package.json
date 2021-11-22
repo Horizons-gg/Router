@@ -1,0 +1,22 @@
+{
+  "name": "router",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Horizons-gg/Router.git"
+  },
+  "author": "Jessica Lancelot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Horizons-gg/Router/issues"
+  },
+  "homepage": "https://github.com/Horizons-gg/Router#readme",
+  "dependencies": {
+    "bouncy": "^3.2.2"
+  }
+}
