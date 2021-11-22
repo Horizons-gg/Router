@@ -9,6 +9,10 @@ bouncy(function (req, bounce) {
     if (req.headers.host === 'api.horizons.gg') return bounce(9081)
     if (req.headers.host === 'discord.horizons.gg') return bounce(9082)
 
+    //? Software
+    if (req.headers.host === 'grafana.horizons.gg') return bounce(3000)
+    if (req.headers.host === 'torch.horizons.gg') return bounce(8090)
+
 
     //? Development
     if (req.headers.host === 'dev.horizons.gg') return bounce(8080)
