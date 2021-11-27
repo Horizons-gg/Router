@@ -1,6 +1,6 @@
 const bouncy = require('bouncy')
 
-bouncy(function (req, bounce) {
+bouncy(function(req, bounce) {
 
     if (req.headers.referer) console.log(`${req.method}: ${req.headers.referer}`)
 
@@ -11,7 +11,8 @@ bouncy(function (req, bounce) {
 
     //? Software
     if (req.headers.host === 'grafana.horizons.gg') return bounce(3000)
-    if (req.headers.host === 'torch.horizons.gg') return bounce(8090)
+    if (req.headers.host === 'eco.horizons.gg') return bounce(3001)
+    if (req.headers.host === 'se.horizons.gg') return bounce(8090)
 
 
     //? Development
