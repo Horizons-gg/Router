@@ -18,4 +18,10 @@ bouncy(function(req, bounce) {
     //? Development
     if (req.headers.host === 'dev.horizons.gg') return bounce(8080)
 
+    if (req.headers.host === 'ecodev.horizons.gg') {
+        if (!req.url.includes('authtoken') || req.url.includes('passthrough=true')) return bounce(3001)
+        //var parsed = req.url.split('?')[1].split('&')
+        return bounce(8080)
+    }
+
 }).listen(80)
